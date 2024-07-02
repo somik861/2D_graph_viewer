@@ -1,5 +1,5 @@
 Write-Host Installing conan
-python -m pip install --require-virtualenv conan setuptools
+python -m pip install conan setuptools
 if (!($LastExitCode -eq 0))
 {
     exit   
