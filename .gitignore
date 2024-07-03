@@ -1,5 +1,10 @@
+# IDE
 .vs
 .vscode
+
+# build artifacts
 out
 build*
 .env
+CMakeUserPresets.json
+

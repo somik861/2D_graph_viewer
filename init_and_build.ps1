@@ -24,3 +24,24 @@ if (!($LastExitCode -eq 0))
 {
     exit   
 }
+
+Write-Host Configuration of cmake
+cmake --preset conan-default 
+if (!($LastExitCode -eq 0))
+{
+    exit   
+}
+
+Write-Host Building debug version
+cmake --build --preset conan-debug
+if (!($LastExitCode -eq 0))
+{
+    exit   
+}
+
+Write-Host Building release version
+cmake --build --preset conan-release
+if (!($LastExitCode -eq 0))
+{
+    exit   
+}
