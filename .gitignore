@@ -7,4 +7,5 @@ out
 build*
 .env
 CMakeUserPresets.json
-
+CMakePresets.json
+.mypy_cache

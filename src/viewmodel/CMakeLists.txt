@@ -1,0 +1,3 @@
+create_viewer_library(viewer_viewmodel)
+
+target_link_libraries(viewer_viewmodel PRIVATE viewer_view viewer_model)
